@@ -1,10 +1,3 @@
-C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.csproj.AssemblyReference.cache
-C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.AssemblyInfoInputs.cache
-C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.AssemblyInfo.cs
-C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.csproj.CoreCompileInputs.cache
-C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\appsettings.json
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\HelpDeskClean.exe
@@ -12,6 +5,9 @@ C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debu
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\HelpDeskClean.runtimeconfig.json
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\HelpDeskClean.dll
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\HelpDeskClean.pdb
+C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\FluentResults.dll
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\Humanizer.dll
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
@@ -27,6 +23,13 @@ C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debu
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.csproj.AssemblyReference.cache
+C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.AssemblyInfoInputs.cache
+C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.AssemblyInfo.cs
+C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.csproj.CoreCompileInputs.cache
+C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\staticwebassets\msbuild.HelpDeskClean.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\staticwebassets\msbuild.build.HelpDeskClean.props
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.HelpDeskClean.props
@@ -41,6 +44,3 @@ C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debu
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.pdb
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\HelpDeskClean.genruntimeconfig.cache
 C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\obj\Debug\net7.0\ref\HelpDeskClean.dll
-C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\AutoMapper.dll
-C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\EnzoGodoy\Desktop\PersonalProjects\HelpDeskClean\HelpDeskClean\bin\Debug\net7.0\FluentResults.dll

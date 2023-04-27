@@ -15,19 +15,20 @@ namespace HelpDeskClean.Repositories
             _context = context;
         }
 
-        public async Task AdicionarEquipamento(Equipamento novoEquipamento)
+        public async Task<Equipamento> AdicionarEquipamento(Equipamento novoEquipamento)
         {
             await _context.Equipamentos.AddAsync(novoEquipamento);
             await _context.SaveChangesAsync();
+            return novoEquipamento;
         }
 
-        async Task<List<Equipamento>> IEquipamentoRepository.BuscarEquipamentos()
+        public async Task<List<Equipamento>> BuscarEquipamentos()
         {
 
             return await _context.Equipamentos.ToListAsync();
         }
 
-        async Task<Equipamento> IEquipamentoRepository.BuscarEquipamentoID(int id)
+        public async Task<Equipamento> BuscarEquipamentoID(int id)
         {
             Equipamento equipamentoEncontrado = await _context.Equipamentos.FirstOrDefaultAsync(equip => equip.Id == id);
 
@@ -41,14 +42,14 @@ namespace HelpDeskClean.Repositories
             }
         }
 
-        public Result DeletarEquipamento(int id)
+        public async Task<Result> DeletarEquipamento(int id)
         {
-            Equipamento equipamento = _context.Equipamentos.FirstOrDefault(equip => equip.Id == id);
+            Equipamento equipamento = await _context.Equipamentos.FirstOrDefaultAsync(equip => equip.Id == id);
 
             if (equipamento != null)
             {
                 _context.Remove(equipamento);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
                 return Result.Ok();
             }
             else
@@ -57,13 +58,13 @@ namespace HelpDeskClean.Repositories
             }
         }
 
-        Result IEquipamentoRepository.AtualizarEquipamento(int id, Equipamento novoEquipamento)
+        public async Task<Result> AtualizarEquipamento(int id, Equipamento novoEquipamento)
         {
-            Equipamento equipamento = _context.Equipamentos.FirstOrDefault(equip => equip.Id == id);
+            Equipamento equipamento = await _context.Equipamentos.FirstOrDefaultAsync(equip => equip.Id == id);
 
             if (novoEquipamento != null)
             {
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
                 return Result.Ok();
             }
             else

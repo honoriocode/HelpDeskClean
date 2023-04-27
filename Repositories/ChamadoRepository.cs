@@ -15,18 +15,19 @@ namespace HelpDeskClean.Repositories
             _context = context;
         }
 
-        async Task IChamadoRepository.AdicionarChamado(Chamado novoChamado)
+        public async Task<Chamado> AdicionarChamado(Chamado novoChamado)
         {
             await _context.Chamados.AddAsync(novoChamado);
             await _context.SaveChangesAsync();
+            return novoChamado;
         }
 
-        async Task<List<Chamado>> IChamadoRepository.BuscarChamados()
+        public async Task<List<Chamado>> BuscarChamados()
         {
             return await _context.Chamados.ToListAsync();
         }
 
-        async Task<Chamado> IChamadoRepository.BuscarChamadoPorID(int id)
+        public async Task<Chamado> BuscarChamadoPorID(int id)
         {
             Chamado chamadoEncontrado = await _context.Chamados.FirstOrDefaultAsync(chamad => chamad.Id == id);
 
@@ -40,9 +41,9 @@ namespace HelpDeskClean.Repositories
             }
         }
 
-        public Result DeletarChamado(int id)
+        public async Task<Result> DeletarChamado(int id)
         {
-            Chamado chamado = _context.Chamados.FirstOrDefault(chamad=> chamad.Id == id);
+            Chamado chamado = await _context.Chamados.FirstOrDefaultAsync(chamad=> chamad.Id == id);
 
             if (chamado != null)
             {
@@ -55,9 +56,9 @@ namespace HelpDeskClean.Repositories
                 return Result.Fail("Erro");
             }
         }
-        Result IChamadoRepository.AtualizarChamado(int id, Chamado novoChamado)
+        public async Task<Result> AtualizarChamado(int id, Chamado novoChamado)
         {
-            Chamado chamado = _context.Chamados.FirstOrDefault(chamad => chamad.Id == id);
+            Chamado chamado = await _context.Chamados.FirstOrDefaultAsync(chamad => chamad.Id == id);
 
             if (chamado != null)
             {

@@ -7,9 +7,9 @@ namespace HelpDeskClean.Repositories.Interfaces
     {
         Task<List<Equipamento>> BuscarEquipamentos();
         Task<Equipamento> BuscarEquipamentoID(int id);
-        Task AdicionarEquipamento(Equipamento novoEquipamento);
-        Result AtualizarEquipamento(int id, Equipamento novoEquipamento);
-        Result DeletarEquipamento(int id);
+        Task<Equipamento> AdicionarEquipamento(Equipamento novoEquipamento);
+        Task<Result> AtualizarEquipamento(int id, Equipamento novoEquipamento);
+        Task<Result> DeletarEquipamento(int id);
 
     }
 }

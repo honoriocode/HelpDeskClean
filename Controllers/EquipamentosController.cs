@@ -17,7 +17,7 @@ namespace HelpDeskClean.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AdicionarEquipamento([FromBody] Equipamento equipamento)
+        public async Task<ActionResult> AdicionarEquipamento([FromBody] Equipamento equipamento)
         {
             await _equipamentoRepository.AdicionarEquipamento(equipamento);
             return CreatedAtAction(nameof(BuscarEquipamentoID), new { id = equipamento.Id }, equipamento);
@@ -46,9 +46,9 @@ namespace HelpDeskClean.Controllers
         }
 
         [HttpDelete("id")]
-        public IActionResult DeletarEquipamento(int id)
+        public async Task<ActionResult<Result>> DeletarEquipamento(int id)
         {
-            Result respExcluir = _equipamentoRepository.DeletarEquipamento(id);
+            Result respExcluir = await _equipamentoRepository.DeletarEquipamento(id);
 
             if (respExcluir.IsFailed)
                 return NotFound();
@@ -56,9 +56,9 @@ namespace HelpDeskClean.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult AtualizarEquipamento (int id, [FromBody]  Equipamento equipamento)
+        public async Task<ActionResult<Result>> AtualizarEquipamento (int id, [FromBody]  Equipamento equipamento)
         {
-            Result respAtualizar = _equipamentoRepository.AtualizarEquipamento(id, equipamento);
+            Result respAtualizar = await _equipamentoRepository.AtualizarEquipamento(id, equipamento);
 
             if (respAtualizar.IsFailed)
             {

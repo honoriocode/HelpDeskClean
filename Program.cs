@@ -13,7 +13,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-
 var connectionString = builder.Configuration.GetConnectionString("HelpDeskConnection");
 builder.Services.AddDbContext<ApplicationContext>(
     opt => opt.UseMySql(connectionString,
@@ -33,6 +32,13 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseCors(cors =>
+{
+    cors.AllowAnyHeader();
+    cors.AllowAnyMethod();
+    cors.AllowAnyOrigin();
+});
 
 app.MapControllers();
 

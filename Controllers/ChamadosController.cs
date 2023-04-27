@@ -17,9 +17,10 @@ namespace HelpDeskClean.Controllers
         }
 
         [HttpPost]
-        public IActionResult AdicionarChamado([FromBody] Chamado chamado)
+        public async Task<ActionResult> AdicionarChamado([FromBody] Chamado chamado)
         {
-            return CreatedAtAction(nameof(AdicionarChamado), new { id = chamado.Id }, chamado);
+            await _chamadoRepository.AdicionarChamado(chamado);
+            return CreatedAtAction(nameof(BuscarChamadoPorID), new { id = chamado.Id }, chamado);
         }
 
         [HttpGet]
@@ -45,9 +46,9 @@ namespace HelpDeskClean.Controllers
         }
 
         [HttpDelete("id")]
-        public IActionResult DeletarChamado(int id)
+        public async Task<ActionResult<Result>> DeletarChamado(int id)
         {
-            Result respExcluir = _chamadoRepository.DeletarChamado(id);
+            Result respExcluir = await _chamadoRepository.DeletarChamado(id);
 
             if (respExcluir.IsFailed)
                 return NotFound();
@@ -55,9 +56,9 @@ namespace HelpDeskClean.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult AtualizarChamado(int id, [FromBody] Chamado chamado)
+        public async Task<ActionResult<Result>> AtualizarChamado(int id, [FromBody] Chamado chamado)
         {
-            Result respAtualizar = _chamadoRepository.AtualizarChamado(id, chamado);
+            Result respAtualizar = await _chamadoRepository.AtualizarChamado(id, chamado);
 
             if (respAtualizar.IsFailed)
             {

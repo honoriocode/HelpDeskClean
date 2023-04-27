@@ -7,8 +7,8 @@ namespace HelpDeskClean.Repositories.Interfaces
     {
         Task<List<Chamado>> BuscarChamados();
         Task<Chamado> BuscarChamadoPorID(int id);
-        Task AdicionarChamado(Chamado novoChamado);
-        Result AtualizarChamado(int id, Chamado novoChamado);
-        Result DeletarChamado(int id);
+        Task<Chamado> AdicionarChamado(Chamado novoChamado);
+        Task<Result> AtualizarChamado(int id, Chamado novoChamado);
+        Task<Result> DeletarChamado(int id);
     }
 }
